@@ -15,6 +15,7 @@
     <script type="module">
       import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
 
       const firebaseConfig = {
          apiKey: "AIzaSyDS4j7WqJDmVUCsX-8iuvY8vhc_MgtTqLo",
@@ -29,6 +30,7 @@
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
       let logoutButton = document.getElementById("logout-button");
       console.log(logoutButton);
 
