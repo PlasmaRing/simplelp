@@ -71,8 +71,8 @@ signinButton.addEventListener("click", (e) => {
       })
         .then(() => {
           // Data saved successfully!
-          //   alert("user telah sukses login");
-          location.href = "http://127.0.0.1:5500/auth_firebase_cdn/admin.html";
+          alert("user telah sukses login");
+          location.href = "https://plasmaring.github.io/simplelp/admin.html";
         })
         .catch((error) => {
           //the write failed
